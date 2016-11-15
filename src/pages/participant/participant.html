@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Event Safe</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h2>Participant Information</h2>
+    
+      <p>
+       Please enter the participant infomation below and click save.
+      </p>
+      <ion-thumbnail>
+      
+      </ion-thumbnail>
+      <ion-item>
+    <ion-label>Present</ion-label>
+    <ion-checkbox [(ngModel)]="pepperoni"></ion-checkbox>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Dropped Off</ion-label>
+    <ion-checkbox [(ngModel)]="sausage" ></ion-checkbox>
+  </ion-item>
+      
+  
+    <ion-list>
+  <ion-item>
+    <ion-label color="primary">Participant Name</ion-label>
+    <ion-input placeholder="Here"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Time In</ion-label>
+    <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label color="dark">Time Out</ion-label>
+    <ion-datetime displayFormat="HH:mm" [(ngModel)]="myDate"></ion-datetime>
+  </ion-item>
+
+
+  
+
+  
+
+</ion-list>
+
+
+
+
+
+      
+
+  <button ion-button icon-left>
+  <ion-icon name="star"></ion-icon>
+  Clear
+</button>
+
+<button ion-button icon-right>
+  <ion-icon name="star"></ion-icon>
+   Save
+</button>
+</ion-content>

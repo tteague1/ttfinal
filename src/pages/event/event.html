@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Event Information
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <ion-list>
+  <ion-item>
+    <ion-label color="dark">User</ion-label>
+    <ion-select [(ngModel)]="user">
+      <ion-option value="user1">John Simmons</ion-option>
+      <ion-option value="user2">Bob Moore</ion-option>
+      <ion-option value="user3">Richard Johnson</ion-option>
+      <ion-option value="user4">Sherri Adams</ion-option>
+      <ion-option value="user5">Dave Jones</ion-option>
+      <ion-option value="user6">Gus Davidson</ion-option>
+    </ion-select>
+  </ion-item>
+</ion-list>
+
+
+<ion-list>
+  <ion-item>
+    <ion-label color="dark">Event Name</ion-label>
+    <ion-input id="place" placeholder="Here"></ion-input>
+  </ion-item>
+
+<ion-item>
+    <ion-label color="dark">Location</ion-label>
+    <ion-input placeholder="Here"></ion-input>
+  </ion-item>
+
+<ion-item >
+  
+  <ion-label >Start Date / Time</ion-label>
+  <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="startDate"></ion-datetime>
+ 
+</ion-item>
+ 
+
+<ion-item>
+  <ion-label color="dark">End Date / Time</ion-label>
+  <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="endDate"></ion-datetime>
+</ion-item>
+
+
+
+   
+
+  <button ion-button color="dark"(click)="buttonClick()">
+  Save
+</button>
+<button ion-button color="dark"(click)="buttonClick()">
+  Clear
+</button>
+<!--<button ion-button icon-left>
+  <ion-icon name="star"></ion-icon>
+  Clear
+</button>
+
+<button ion-button icon-right>
+  <ion-icon name="star"></ion-icon>
+   Save
+</button>-->
+
+
+
+
+
+
+   <ion-content>
+    <div id="map"></div>
+</ion-content>
+     
+       
+</ion-content>
+

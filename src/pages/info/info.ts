@@ -7,7 +7,7 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'info.html'
 })
 export class Info {
-
+  participant:string = '';
   constructor(public navCtrl: NavController) {
 
   }

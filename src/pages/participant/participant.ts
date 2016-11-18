@@ -7,7 +7,10 @@ import { NavController } from 'ionic-angular';
   templateUrl: 'participant.html'
 })
 export class Participant {
-
+          present:string;
+          dropped:string;
+          startTime:string;
+          endTime:string;
   constructor(public navCtrl: NavController) {
 
   }

@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 import { NavController } from 'ionic-angular';
 import { Geolocation } from 'ionic-native';
-import {Page, Platform} from 'ionic/ionic';
 import { GoogleMap, GoogleMapsEvent, GoogleMapsLatLng } from 'ionic-native';
 
 
@@ -26,13 +25,13 @@ watch.subscribe((data) => {
   templateUrl: 'event.html',
 })
 export class Event {
-
+        user:string;
+        startDate:string;
+        endDate:string;
   map: GoogleMap;
  
-    constructor(public navCtrl: NavController, public platform: any) {
-        platform.ready().then(() => {
-            this.loadMap();
-        });
+    constructor(public navCtrl: NavController) {
+        
     }
  
     loadMap(){

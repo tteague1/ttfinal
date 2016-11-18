@@ -29,53 +29,37 @@
     <ion-input id="place" placeholder="Here"></ion-input>
   </ion-item>
 
-<ion-item>
+  <ion-item>
     <ion-label color="dark">Location</ion-label>
     <ion-input placeholder="Here"></ion-input>
   </ion-item>
 
-<ion-item >
-  
-  <ion-label >Start Date / Time</ion-label>
-  <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="startDate"></ion-datetime>
- 
-</ion-item>
+  <ion-item >
+    <ion-label >Start Date / Time</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="startDate"></ion-datetime>
+  </ion-item>
  
 
-<ion-item>
-  <ion-label color="dark">End Date / Time</ion-label>
-  <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="endDate"></ion-datetime>
-</ion-item>
+  <ion-item>
+    <ion-label color="dark">End Date / Time</ion-label>
+    <ion-datetime displayFormat="MMM DD, YYYY HH:mm" [(ngModel)]="endDate"></ion-datetime>
+  </ion-item>
 
 
+<button ion-button color="light">Clear</button>
+<button ion-button color="light">Save</button>
+
+  <!--<button ion-button color="dark"(click)="buttonClick()">
+    Save
+  </button>
+  <button ion-button color="dark"(click)="buttonClick()">
+    Clear
+  </button>-->
 
    
+    <!--<div id="map"></div>-->
 
-  <button ion-button color="dark"(click)="buttonClick()">
-  Save
-</button>
-<button ion-button color="dark"(click)="buttonClick()">
-  Clear
-</button>
-<!--<button ion-button icon-left>
-  <ion-icon name="star"></ion-icon>
-  Clear
-</button>
-
-<button ion-button icon-right>
-  <ion-icon name="star"></ion-icon>
-   Save
-</button>-->
-
-
-
-
-
-
-   <ion-content>
-    <div id="map"></div>
-</ion-content>
-     
+</ion-list> 
        
 </ion-content>
 
